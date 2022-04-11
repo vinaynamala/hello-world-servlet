@@ -6,23 +6,7 @@ pipeline {
     }
 stages { 
      
- stage('Preparation') { 
-     steps {
-// for display purposes
-
-      // Get some code from a GitHub repository
-
-      git 'https://github.com/raknas999/hello-world-servlet.git'
-
-      // Get the Maven tool.
-     
- // ** NOTE: This 'M3' Maven tool must be configured
- 
-     // **       in the global configuration.   
-     }
-   }
-
-   stage('Build') {
+    stage('Build') {
        steps {
        // Run the maven build
 

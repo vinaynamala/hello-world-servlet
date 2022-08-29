@@ -34,12 +34,7 @@ stages {
        }
 //}
    }
- 
-  stage('Results') {
-      steps {
-      junit '**/target/surefire-reports/TEST-*.xml'
-          }
- }
+
  stage('Sonarqube') {
     environment {
         scannerHome = tool 'sonarqube'
